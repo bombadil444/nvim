@@ -10,15 +10,15 @@ lspconfig = require('lspconfig').pylsp.setup({
                 autopep8 = { enabled = false },
                 yapf = { enabled = false },
                 -- linter options
-                pylint = { enabled = true, executable = "pylint" },
+                pylint = { enabled = false, executable = "pylint" },
                 pyflakes = { enabled = false },
                 pycodestyle = { enabled = false },
                 -- type checker
-                pylsp_mypy = { enabled = true },
+                pylsp_mypy = { enabled = false },
                 -- auto-completion options
                 jedi_completion = { fuzzy = true },
                 -- import sorting
-                pyls_isort = { enabled = true },
+                pyls_isort = { enabled = false },
             },
         },
     },

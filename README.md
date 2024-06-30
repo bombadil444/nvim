@@ -1,9 +1,15 @@
 
 ## Dependencies:
-- ```pip install "python-lsp-server[all]"```
-- ```sudo apt install ripgrep```
+```
+sudo apt-get install neovim
+sudo apt install ripgrep
+pip install "python-lsp-server[all]"
+```
 
 ## Shortcuts:
+### vim
+- ctrl+w [direction] = select window
+
 ### Project
 - [space] pv = view files
 - [space] pf = find file

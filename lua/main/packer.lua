@@ -13,10 +13,10 @@ return require('packer').startup(function(use)
   }
 
   use ({
-	  "folke/tokyonight.nvim",
-	  as = 'tokyonight',
+	  "ellisonleao/gruvbox.nvim",
+	  as = 'gruvbox',
 	  config = function()
-		  vim.cmd('colorscheme tokyonight-moon')
+		  vim.cmd('colorscheme gruvbox')
 	  end
   })
 
@@ -24,9 +24,11 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use('nvim-tree/nvim-tree.lua')
+  use('nvim-tree/nvim-web-devicons')
 
   use {
-	  'VonHeikemen/lsp-zero.nvim',
+      'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
 	  requires = {
 		  --- Uncomment the two plugins below if you want to manage the language servers from neovim
