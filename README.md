@@ -21,7 +21,11 @@ echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 
 ## Shortcuts:
 ### vim
-- ctrl+w [direction] = select window
+- ctrl+w w = jump between windows
+- <number> ctrl+w | = set window width
+- m<number> = mark file position at <number>
+- '<number> = jump to mark <number>
+- D = delete from cursor to end of line
 
 ### Project
 - [space] pf = find file
@@ -32,6 +36,7 @@ echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 - ctrl+g = search git files
 
 ### Harpoon
+- ctrl+h = show harpooned files
 - [space] a = add file
 - ctrl+u = file 1
 - ctrl+i = file 2
