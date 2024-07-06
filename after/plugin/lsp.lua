@@ -1,6 +1,8 @@
 require('lsp-zero')
 
-lspconfig = require('lspconfig').pylsp.setup({
+local lspconfig = require('lspconfig')
+
+lspconfig.pylsp.setup({
     on_attach = custom_attach,
     settings = {
         pylsp = {
@@ -26,4 +28,15 @@ lspconfig = require('lspconfig').pylsp.setup({
         debounce_text_changes = 200,
     },
     capabilities = capabilities,
+})
+
+lspconfig.omnisharp.setup({
+  on_attach = require('lspconfig').omnisharp.on_attach,
+  capabilities = vim.lsp.protocol.make_client_capabilities(),
+  cmd = { "OmniSharp", "--languageserver" },
+  settings = {
+    csharp = {
+      formatting = { enabled = true },
+    },
+  },
 })

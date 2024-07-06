@@ -125,6 +125,11 @@ _G.packer_plugins = {
     path = "/home/bombadil/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["omnisharp-vim"] = {
+    loaded = true,
+    path = "/home/bombadil/.local/share/nvim/site/pack/packer/start/omnisharp-vim",
+    url = "https://github.com/OmniSharp/omnisharp-vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/bombadil/.local/share/nvim/site/pack/packer/start/packer.nvim",

@@ -2,8 +2,19 @@
 ## Dependencies:
 ```
 sudo apt-get install neovim
+
+# python lsp
 sudo apt install ripgrep
 pip install "python-lsp-server[all]"
+
+# C# lsp
+sudo apt-get install -y dotnet-sdk-6.0
+sudo apt-get install -y dotnet-runtime-6.0
+# go into nvim and run the following
+:OmniSharpInstall
+# add the following to .bashrc
+export DOTNET_ROOT=<location where .../dotnet folder is> # could be /usr/share/dotnet - should have host/ folder
+export PATH=$PATH:$HOME/.cache/omnisharp-vim/omnisharp-roslyn
 ```
 
 ## Kitty terminal:

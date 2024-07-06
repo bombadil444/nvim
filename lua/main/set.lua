@@ -18,3 +18,5 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 
 vim.opt.swapfile = false
+
+vim.g.OmniSharp_server_use_net6 = 1
