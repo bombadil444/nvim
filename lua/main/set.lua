@@ -20,3 +20,11 @@ vim.opt.updatetime = 50
 vim.opt.swapfile = false
 
 vim.g.OmniSharp_server_use_net6 = 1
+vim.g.OmniSharp_highlighting = 0
+
+vim.cmd([[
+  augroup RemoveTrailingWhitespace
+    autocmd!
+    autocmd BufWritePre * :%s/\s\+$//e
+  augroup END
+]])
